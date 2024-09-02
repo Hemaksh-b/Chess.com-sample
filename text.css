@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+}
+
+:root{
+    --grey: rgb(49, 49, 49);
+    --dark-grey: rgb(34, 33, 33);
+    --green: rgb(84, 150, 84);
+}
+
+.main{
+    background-color: var(--grey);
+    width: 92.5vw;
+    height: 100vh;
+}
+
+.side{
+    background-color: var(--dark-grey);
+    width: 150px;
+    height: 100vh;
+}
+
+.first img{
+    height: 37px;
+    margin-top: 10px;
+}
+
+.side ul{
+    text-align: center;
+    justify-items: center;
+    font-size: 20px;
+}
+
+.side ul li{
+    padding: 11px;
+}
+
+#searchbar{
+    font-size: 15px;
+    width: 6.5vw;
+    height: 30px;
+    background-color: var(--grey);
+    border-radius: 3px;
+    padding-left: 9PX;
+}
+
+.signup{
+    background-color: var(--grey);
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    width: 130px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+.login{
+    background-color: var(--green);
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    width: 130px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+.last li{
+    font-size: 12px;
+    padding: 3px;
+    color: grey;
+    margin: -7px;
+}
+
+.last{
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    left: 30px;
+
+
+}
+
+ul li{
+    list-style: none;
+}
+
+.main{
+    position: relative;
+}
+
+#chessboard{
+position: absolute;
+top: 80px;
+left: 4vw;
+width: 41.6vw;
+}
+
+.pic{
+    height:50px;
+    margin-right: 10px;
+}
+
+.w1{
+    position: absolute;
+    top: 18px;
+    left: 70px;
+    display: flex;
+}
+
+.w1 h2{
+    margin: auto;
+}
+
+
+.w2{
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    display: flex;
+}
+
+.w2 h2{
+    margin: auto;
+}
+
+.main-center{
+    background-color: var(--dark-grey);
+    height: 94vh;
+    width: 28%;
+    position: absolute;
+    /* right: 22%; */
+    top: 3vh;
+    text-align: center;
+    margin-left:52%;
+    border-radius: 5px;
+}
+
+.main-center h1{
+    position: relative;
+    top: 10px;
+    font-size: 35px;
+}
+
+
+.center-inside1{
+    height: 90px;
+    width: 85%;
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 120px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.center-inside2{
+    height: 90px;
+    width: 85%;
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 120px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 3px;
+
+    margin-top: 5px;
+}
+.center-inside3{
+    height: 90px;
+    width: 85%;
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 120px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.center-inside4{
+    height: 90px;
+    width: 85%;
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 120px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.center-inside5{
+    height: 90px;
+    width: 85%;
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 120px;
+    margin-top: 5px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 3px;
+}
+
+.center-inside-text{
+    margin: 0px;
+    position: absolute;
+    left: 80px;
+    top: 20px;
+}
+
+.center-inside-text h2{
+    position: relative;
+    right: 37px;
+}
+
+.remove{
+    background-color: rgb(4, 129, 179);
+    height: 30px;
+    width: 15vw;
+    position: absolute;
+    top: 30px;
+    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.remove:hover{
+    background-color: rgb(5, 145, 201);
+}
+
+.side ul li:hover{
+    background-color: rgb(75, 75, 75);
+}
+
+
+.last ul li:hover{
+    color: rgb(216, 216, 216);
+    background-color: var(--dark-grey);
+}
+
+.center-inside1:hover , .center-inside2:hover , .center-inside3:hover , .center-inside4:hover , .center-inside5:hover{
+    background-color: rgb(31, 30, 30);
+}
+
+
