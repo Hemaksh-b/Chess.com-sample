@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
@@ -8,182 +8,174 @@
     box-sizing: inherit;
 }
 
-body{
+body {
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-:root{
+:root {
     --grey: rgb(49, 49, 49);
     --dark-grey: rgb(34, 33, 33);
     --green: rgb(84, 150, 84);
 }
 
-.main{
+.main {
     background-color: var(--grey);
     width: 92.5vw;
     height: 100vh;
 }
 
-.side{
+.side {
     background-color: var(--dark-grey);
     width: 150px;
     height: 100vh;
 }
 
-.first img{
+.first img {
     height: 37px;
     margin-top: 10px;
 }
 
-.second{
-    height: 0px;
-    width: 0px;
-    /* display: none; */
+.second {
+    display: none;
 }
 
-.second img{
-    height: 0px;
-    width: 0px;
-}
+.second img {}
 
 
-.side ul{
+.side ul {
     text-align: center;
     justify-items: center;
     font-size: 20px;
 }
 
-.side ul li{
+.side ul li {
     padding: 11px;
 }
 
-#searchbar{
+#searchbar {
     font-size: 15px;
-    width: 6.5vw;
+    width: 125px;
     height: 30px;
     background-color: var(--grey);
     border-radius: 3px;
     padding-left: 9PX;
 }
 
-.signup{
+.signup, .signup2 {
     background-color: var(--grey);
     color: white;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    margin-bottom: 20px;
-    width: 130px;
-    border-radius: 3px;
-    margin: auto;
-    margin-top: 15px;
 }
 
-.signup:hover{
+.signup:hover, .signup2:hover {
     background-color: rgb(26, 26, 26);
 }
 
-.login:hover{
+.login:hover, .login2:hover {
     background-color: rgb(2, 139, 2);
 }
 
-.login{
+.login, .login2 {
     background-color: var(--green);
     color: white;
+    
+
+}
+
+.login, .signup{
+    margin: auto;
     padding-top: 9px;
     padding-bottom: 9px;
     margin-bottom: 20px;
     width: 130px;
     border-radius: 3px;
-    margin: auto;
     margin-top: 15px;
-
 }
 
-.last li{
+.last li {
     font-size: 12px;
     padding: 3px;
     color: grey;
     margin: -7px;
 }
 
-.last{
+.last {
     position: absolute;
     bottom: 15px;
-    text-align: center;
-    left: 30px;
+    left: 41px;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-.main{
+.main {
     position: relative;
 }
 
-#chessboard{
-position: absolute;
-top: 80px;
-left: 4vw;
-width: 41.6vw;
+#chessboard {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 815px;
 }
 
-.pic{
-    height:40px;
+.pic {
+    height: 40px;
     margin-right: 10px;
 }
 
-.w1{
+.w1 {
     position: absolute;
     top: 35px;
-    left: 4vw;
+    left: 30px;
     display: flex;
 }
 
-.w1 h2{
+.w1 h2 {
     margin: auto;
     font-size: 15px;
 }
 
 
-.w2{
+.w2 {
     position: absolute;
-    bottom: 1.5vw;
-    left: 4vw;
+    bottom: 10px;
+    left: 30px;
     display: flex;
 }
 
-.w2 h2{
+.w2 h2 {
     margin: auto;
     font-size: 15px;
 }
 
 
-.main-center{
+.main-center {
     background-color: var(--dark-grey);
     height: 94vh;
-    width: 28%;
+    width: 34em;
     position: absolute;
     /* right: 22%; */
     top: 3vh;
     text-align: center;
-    margin-left:52%;
+    margin-left: 870px;
     border-radius: 5px;
+    overflow: auto;
 }
 
-.main-center h1{
+.main-center h1 {
     position: relative;
     top: 10px;
     font-size: 35px;
 }
 
 
-.center-inside1{
-    height: 90px;
+.center-inside1 {
+    min-height: 90px;
     width: 85%;
     border-radius: 5px;
     position: relative;
@@ -193,9 +185,13 @@ width: 41.6vw;
     border: 1px solid rgb(46, 45, 45);
     border-radius: 3px;
     margin-top: 5px;
+    height: fit-content;
+    text-overflow: ellipsis;
+    overflow: auto;
 }
-.center-inside2{
-    height: 90px;
+
+.center-inside2 {
+    min-height: 90px;
     width: 85%;
     border-radius: 5px;
     position: relative;
@@ -206,9 +202,12 @@ width: 41.6vw;
     border-radius: 3px;
 
     margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: auto;
 }
-.center-inside3{
-    height: 90px;
+
+.center-inside3 {
+    min-height: 90px;
     width: 85%;
     border-radius: 5px;
     position: relative;
@@ -218,9 +217,12 @@ width: 41.6vw;
     border: 1px solid rgb(46, 45, 45);
     border-radius: 3px;
     margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: auto;
 }
-.center-inside4{
-    height: 90px;
+
+.center-inside4 {
+    min-height: 90px;
     width: 85%;
     border-radius: 5px;
     position: relative;
@@ -230,9 +232,12 @@ width: 41.6vw;
     border: 1px solid rgb(46, 45, 45);
     border-radius: 3px;
     margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: auto;
 }
-.center-inside5{
-    height: 90px;
+
+.center-inside5 {
+    min-height: 90px;
     width: 85%;
     border-radius: 5px;
     position: relative;
@@ -243,112 +248,223 @@ width: 41.6vw;
     border: 1px solid rgb(46, 45, 45);
     border-radius: 3px;
     margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: auto;
 }
 
 .center-inside-text{
-    margin: 0px;
-    position: absolute;
-    top: 20px;
-    left: 80px;
+    margin-top: 18px;
 }
 
-.five h2{
-    position: relative;
-    left: -34px;
-}
-.one h2{
-    position: relative;
-    left: -37px;
-}
-.two h2{
-    position: relative;
-    left: -78px
-}
-
-.three h2{
-    position: relative;
-    left: -51px;
-}
-
-.four h2{
-    position: relative;
-    left: -60px;
-}
-
-
-.remove{
+.remove {
     background-color: rgb(4, 129, 179);
     height: 30px;
-    width: 15vw;
+    width: 300px;
+    margin: auto;
     position: absolute;
     top: 30px;
-    right: 2%;
+    left: 1420px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2px;
+    font-size: 8px;
+    font-weight: lighter;
 }
 
-.remove:hover{
+
+.remove:hover {
     background-color: rgb(5, 145, 201);
 }
 
-.side ul li:hover{
+.side ul li:hover {
     background-color: rgb(26, 26, 26);
 }
 
-.side ul li:first-child:hover{
+.side ul li:first-child:hover {
     background-color: var(--dark-grey);
 }
 
 
-.last ul li:hover{
+.last ul li:hover {
     color: rgb(216, 216, 216);
     background-color: var(--dark-grey);
 }
 
-.center-inside1:hover , .center-inside2:hover , .center-inside3:hover , .center-inside4:hover , .center-inside5:hover{
+.center-inside1:hover,
+.center-inside2:hover,
+.center-inside3:hover,
+.center-inside4:hover,
+.center-inside5:hover {
     background-color: rgb(31, 31, 31);
 }
 
+#menu, #disappearing-logo, .signup2, .login2{
+    height: 0px;
+    width: 0px;
+}
 
-@media screen and (max-width: 1250px){
-    .side{
-        width: 60px;
-    }
-    .side img:first-child{
-        display: none;
-        width: 0px;
-        height: 0px;
-    }
+.signup2 p, .login2 p{
+    font-size: 0;
 
-    .first{
-        height: 0px;
-        width: 0px;
-        display: none;
+}
+
+@media screen and (max-width: 1875px){
+    .main-center{
+        width: 28vw;
     }
 
-    .second img{
-        height: 37px;
-        width: 37px;
-        /* display: contents; */
-    }
+    .remove{
+        display: none;
 
-    .signup{
-        font-size: 0px;
-        display: none;
     }
-    .login{
-        display: none;
-    }
-    #searchbar{
-        display: none;
-    }
-
-    .last{
-        left: 4px;
-        
-        
+    #chessboard{
+        width: 45vw;
     }
 
 }
+
+@media screen and (max-width: 1628px) {
+
+
+    .main-center {
+        width: 36vw;
+    }
+    #chessboard{
+        width: 44.7vw;
+    }
+
+
+}
+
+@media screen and (max-width: 1600px) {
+    .main-center{
+        width: 35vw;
+        /* left: ; */
+    }
+
+    /* #chessboard{
+        width: 50vw;
+    } */
+    .main-center{
+        right: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1250px) {
+    .side {
+        width: 60px;
+    }
+
+    .side img:first-child {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .first {
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+
+    .second,
+    .second img {
+        height: 37px;
+        width: 37px;
+        display: flex;
+    }
+
+    .signup {
+        font-size: 0px;
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    #searchbar {
+        display: none;
+    }
+
+    .last {
+        left: 4px;
+    }
+
+    .main {
+        background-color: var(--grey);
+        width: 100%;
+    }
+
+    #chessboard {
+        width: 55vw;
+    }
+
+    .side li {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 1050px) {
+    #chessboard, .w1, .w2, .side{
+        display: none;
+    }
+    .main-center{
+        width: 96%;
+        margin-top: 50px;
+        height: 90vh;
+    }
+
+    #menu{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+
+    }
+
+    #disappearing-logo{
+        position: absolute;
+        width: 110px;
+        height: 40px;
+        left: 40px;
+        top: 5px;
+    }
+
+    .main{
+        height: 100;
+        background-color: var(--grey);
+    }
+    
+    .login2, .signup2{
+        height: 30px;
+        width: 60px;
+        text-align: center;
+        position: absolute;
+        border-radius: 4px;
+        top: 5px;
+        text-align: center;
+    }
+
+    .login2{
+        right: 10px;
+    }
+
+    .signup2{
+        right: 80px;
+    }
+
+    .login2 p, .signup2 p{
+        font-size: 15px;
+        margin-top: 5px;
+
+    }
+}
+
