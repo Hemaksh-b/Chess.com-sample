@@ -5,6 +5,7 @@
     font-family: "Roboto", system-ui;
     font-weight: 700;
     font-style: normal;
+    box-sizing: inherit;
 }
 
 body{
@@ -37,6 +38,18 @@ a{
     height: 37px;
     margin-top: 10px;
 }
+
+.second{
+    height: 0px;
+    width: 0px;
+    /* display: none; */
+}
+
+.second img{
+    height: 0px;
+    width: 0px;
+}
+
 
 .side ul{
     text-align: center;
@@ -139,7 +152,7 @@ width: 41.6vw;
 
 .w2{
     position: absolute;
-    bottom: 7.2%;
+    bottom: 1.5vw;
     left: 4vw;
     display: flex;
 }
@@ -148,6 +161,7 @@ width: 41.6vw;
     margin: auto;
     font-size: 15px;
 }
+
 
 .main-center{
     background-color: var(--dark-grey);
@@ -298,3 +312,43 @@ width: 41.6vw;
 }
 
 
+@media screen and (max-width: 1250px){
+    .side{
+        width: 60px;
+    }
+    .side img:first-child{
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .first{
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+
+    .second img{
+        height: 37px;
+        width: 37px;
+        /* display: contents; */
+    }
+
+    .signup{
+        font-size: 0px;
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    #searchbar{
+        display: none;
+    }
+
+    .last{
+        left: 4px;
+        
+        
+    }
+
+}
