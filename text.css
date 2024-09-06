@@ -22,6 +22,8 @@ a {
     --green: rgb(84, 150, 84);
 }
 
+
+
 .main {
     background-color: var(--grey);
     width: 92.5vw;
